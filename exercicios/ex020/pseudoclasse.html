@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-classes</title>
+  <style>
+    .box {
+      display: inline-block;
+      background-color: lightgrey;
+      border: 1px solid black;
+      text-align: center;
+      height: 200px;
+      width: 200px;
+    }
+    div:hover {
+      background-color: blueviolet;
+      color: red;
+      
+    }
+
+    .box > p {
+      display: none;
+    }
+
+    .box:hover > p {
+      display: block;
+      font-size: 2em;
+    }
+  </style>
+</head>
+<body>
+  <div id="d1" class="box">01 <p>texto escondido</p></div>
+  <div id="d2" class="box">02 <p>texto escondido</p></div>
+  <div id="d3" class="box">03 <p>texto escondido</p></div>
+</body>
+</html>
