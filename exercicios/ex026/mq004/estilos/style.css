@@ -42,7 +42,7 @@ img {
 }
 
 #phone {
-  display: black;
+  display: block;
 }
 #tablet {
   display: none;
